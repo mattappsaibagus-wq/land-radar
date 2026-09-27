@@ -21,7 +21,7 @@ def run(extra_alerts):
     hist = (alerts + old_hist)[:200]
     save("data/snapshot.json", snap); save("data/alerts.json", hist)
     updated = dt.datetime.utcnow().strftime("%d %b %Y %H:%M UTC")
-    js = "".join(f"const {k}={json.dumps(cfg[k], ensure_ascii=False)};\n" for k in ["TAHAP", "JENIS", "PULAU", "PROV", "HARGA", "UPLIFT", "SISA"])
+    js = "".join(f"const {k}={json.dumps(cfg[k], ensure_ascii=False)};\n" for k in ["TAHAP", "JENIS", "PULAU", "PROV", "HARGA", "UPLIFT", "SISA", "REMOTE", "INFLASI"])
     js += f"const ALERTS={json.dumps(hist[:30], ensure_ascii=False)};\nconst UPDATED={json.dumps(updated)};\n"
     with open(__import__('common').p("docs", "data.js"), "w", encoding="utf-8") as f: f.write(js)
     print("[skor] 5 teratas:", ", ".join(f"{h['nama']} {score(h)}" for h in top))

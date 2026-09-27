@@ -18,7 +18,9 @@
   "industri": "Industri / smelter",
   "bendungan": "Bendungan",
   "kota": "Pusat pemerintahan baru",
-  "pangan": "Food estate"
+  "pangan": "Food estate",
+  "tambang": "Tambang mineral",
+  "energi": "Energi / panas bumi"
  },
  "PULAU": [
   "Bali & Nusa Tenggara",
@@ -353,6 +355,86 @@
       ]
      ],
      "Harga sangat rendah, likuiditas juga rendah. Horizon panjang."
+    ],
+    [
+     "nb6",
+     "Hu'u & Lakey",
+     "Kec. Hu'u, Dompu",
+     -8.78,
+     118.43,
+     2,
+     3,
+     1,
+     4,
+     [
+      [
+       "tambang",
+       "Tambang tembaga-emas Onto (PT Sumbawa Timur Mining)",
+       2,
+       5,
+       "Deposit kelas dunia sekitar 2 miliar ton. Masih pra-studi kelayakan, produksi ditargetkan sekitar 2030",
+       2030
+      ],
+      [
+       "wisata",
+       "Lakey Peak, spot surfing kelas dunia",
+       5,
+       2,
+       "Sudah ada hotel dan resor kecil"
+      ]
+     ],
+     "Tambang bawah tanah (block cave), jadi lahan di atasnya tetap kawasan hutan. Permintaan kos pekerja sudah muncul. Jadwal tambang besar sering mundur."
+    ],
+    [
+     "nb7",
+     "Kota Dompu & koridor Bima",
+     "Dompu, Woja, Bima",
+     -8.54,
+     118.46,
+     3,
+     2,
+     2,
+     3,
+     [
+      [
+       "tambang",
+       "Limpahan pekerja dan pemasok Proyek Hu'u",
+       2,
+       4,
+       "Kota terdekat untuk hunian, gudang, dan jasa",
+       2030
+      ],
+      [
+       "bandara",
+       "Bandara Sultan Salahuddin Bima",
+       5,
+       2,
+       "Akses udara utama Sumbawa timur"
+      ]
+     ],
+     "Pilih lahan tepi jalan provinsi Dompu–Hu'u untuk kos, ruko, dan gudang."
+    ],
+    [
+     "nb8",
+     "Blok Elang",
+     "Sumbawa bagian selatan-tengah",
+     -8.9,
+     117.3,
+     2,
+     2,
+     1,
+     3,
+     [
+      [
+       "tambang",
+       "Tambang tembaga-emas Blok Elang (Amman Mineral)",
+       2,
+       5,
+       "Konsultasi publik AMDAL September 2026, konstruksi mulai pertengahan 2027, bijih perdana 2031–2032",
+       2031
+      ]
+     ],
+     "Sangat terpencil. Lokasi persis dan jalur konveyor belum final. Pantau dokumen AMDAL sebelum membeli."
     ]
    ]
   },
@@ -530,6 +612,79 @@
       ]
      ],
      "Pantau jika ada rute penerbangan baru."
+    ],
+    [
+     "nt8",
+     "Rote Ndao",
+     "Kawasan garam nasional (K-SIGN)",
+     -10.75,
+     123.1,
+     2,
+     3,
+     1,
+     3,
+     [
+      [
+       "industri",
+       "Kawasan Sentra Industri Garam Nasional",
+       4,
+       3,
+       "Dibangun bertahap sekitar 13.000 ha, target serap puluhan ribu tenaga kerja",
+       2027
+      ]
+     ],
+     "Lahan tambak disediakan pemerintah. Peluang ada di hunian dan jasa pendukung di kota terdekat."
+    ],
+    [
+     "nt9",
+     "Sumba Timur",
+     "Waingapu, Pandawai",
+     -9.65,
+     120.3,
+     2,
+     2,
+     1,
+     4,
+     [
+      [
+       "industri",
+       "Tambak udang terintegrasi Waingapu (KKP)",
+       3,
+       3,
+       "Proyek perikanan skala besar di Kec. Pandawai",
+       2027
+      ],
+      [
+       "industri",
+       "Investasi garam swasta",
+       2,
+       2,
+       "Rencana investor dalam dan luar negeri"
+      ]
+     ],
+     "Tanah adat dan ulayat dominan. Wajib pelepasan adat."
+    ],
+    [
+     "nt10",
+     "Ngada",
+     "Mataloko, Bajawa",
+     -8.83,
+     121.05,
+     2,
+     2,
+     1,
+     5,
+     [
+      [
+       "energi",
+       "PLTP Mataloko 2x10 MW",
+       4,
+       2,
+       "Menjelang tahap pengeboran, target operasi komersial 2027",
+       2027
+      ]
+     ],
+     "Contoh katalis lemah untuk harga tanah: proyek panas bumi menyerap sedikit tenaga kerja dan menghadapi penolakan warga."
     ]
    ]
   },
@@ -2119,6 +2274,22 @@
    "src": "99.co, Lamudi, Mitula",
    "tgl": "Sep 2026"
   },
+  "nb6": {
+   "min": 240000,
+   "tip": 250000,
+   "max": 500000,
+   "ket": "Lahan lintas Lakey sekitar Rp25 jt/are, tepi pantai Lakey Rp240–500 rb/m²",
+   "src": "99.co, Lamudi, Mitula, Nestoria",
+   "tgl": "Sep 2026"
+  },
+  "nb7": {
+   "min": 500000,
+   "tip": 500000,
+   "max": 500000,
+   "ket": "Satu iklan kebun tepi jalan dekat kota Dompu sekitar Rp50 jt/are. Data masih tipis",
+   "src": "Flatfy",
+   "tgl": "Sep 2026"
+  },
   "nt4": {
    "min": 100000,
    "tip": 1000000,
@@ -2139,7 +2310,9 @@
   "bendungan": 0.4,
   "kota": 1,
   "pangan": 0.2,
-  "jalan": 0.4
+  "jalan": 0.4,
+  "tambang": 1.3,
+  "energi": 0.3
  },
  "SISA": [
   0,
@@ -2148,5 +2321,20 @@
   0.7,
   0.5,
   0.15
- ]
+ ],
+ "REMOTE": [
+  "nb2",
+  "nb5",
+  "nb6",
+  "nb7",
+  "nb8",
+  "nt3",
+  "nt5",
+  "nt6",
+  "nt8",
+  "nt9",
+  "nt10",
+  "ba3"
+ ],
+ "INFLASI": 0.05
 }

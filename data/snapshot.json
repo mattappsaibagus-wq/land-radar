@@ -115,6 +115,35 @@
    "Kawasan Samota": 2
   }
  },
+ "nb6": {
+  "skor": 56,
+  "kategori": "Hangat",
+  "harga_tip": 250000,
+  "potensi_dasar": 0.515,
+  "tahap": {
+   "Tambang tembaga-emas Onto (PT Sumbawa Timur Mining)": 2,
+   "Lakey Peak, spot surfing kelas dunia": 5
+  }
+ },
+ "nb7": {
+  "skor": 52,
+  "kategori": "Pantau",
+  "harga_tip": 500000,
+  "potensi_dasar": 0.414,
+  "tahap": {
+   "Limpahan pekerja dan pemasok Proyek Hu'u": 2,
+   "Bandara Sultan Salahuddin Bima": 5
+  }
+ },
+ "nb8": {
+  "skor": 56,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.552,
+  "tahap": {
+   "Tambang tembaga-emas Blok Elang (Amman Mineral)": 2
+  }
+ },
  "nt1": {
   "skor": 41,
   "kategori": "Pantau",
@@ -179,6 +208,34 @@
   "potensi_dasar": 0.027,
   "tahap": {
    "Wisata bahari Flores timur": 5
+  }
+ },
+ "nt8": {
+  "skor": 63,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.153,
+  "tahap": {
+   "Kawasan Sentra Industri Garam Nasional": 4
+  }
+ },
+ "nt9": {
+  "skor": 54,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.232,
+  "tahap": {
+   "Tambak udang terintegrasi Waingapu (KKP)": 3,
+   "Investasi garam swasta": 2
+  }
+ },
+ "nt10": {
+  "skor": 45,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.042,
+  "tahap": {
+   "PLTP Mataloko 2x10 MW": 4
   }
  },
  "ac1": {
