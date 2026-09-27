@@ -6,4 +6,4 @@ const HARGA={"ba1": {"min": 2500000, "tip": 5000000, "max": 9500000, "ket": "Kav
 const UPLIFT={"tol": 1, "bandara": 1.5, "kek": 0.8, "pelabuhan": 0.6, "rel": 0.7, "wisata": 0.6, "industri": 0.6, "bendungan": 0.4, "kota": 1, "pangan": 0.2, "jalan": 0.4};
 const SISA=[0, 0.3, 0.5, 0.7, 0.5, 0.15];
 const ALERTS=[];
-const UPDATED="27 Sep 2026 11:56 UTC";
+const UPDATED="27 Sep 2026 12:01 UTC";
