@@ -1,6 +1,6 @@
 # Land Radar Agents
 
-Sekumpulan agen yang berjalan otomatis setiap hari di GitHub Actions untuk memantau prospek tanah di seluruh Indonesia, dengan prioritas Bali, NTB, dan NTT. Hasilnya diterbitkan ke dashboard GitHub Pages dan dikirim ke Telegram.
+Sekumpulan agen yang berjalan otomatis setiap hari di GitHub Actions untuk memantau prospek tanah di seluruh Indonesia, dengan prioritas Bali, NTB, dan NTT. Hasilnya diterbitkan ke dashboard GitHub Pages.
 
 ## Agen
 
@@ -10,16 +10,14 @@ Sekumpulan agen yang berjalan otomatis setiap hari di GitHub Actions untuk meman
 | Berita | `agents/news_agent.py` | Mencari berita 30 hari terakhir per katalis (tol, bandara, KEK) lewat Google News RSS. |
 | Analis | `agents/analyst_agent.py` | Claude membaca berita baru dan menilai apakah tahap proyek berubah (misalnya penlok ke konstruksi) atau muncul katalis baru. |
 | Skor | `agents/scorer.py` | Menghitung ulang skor dan proyeksi harga, membandingkan dengan kemarin, menulis `docs/data.js`. |
-| Notifikasi | `agents/notify.py` | Mengirim ringkasan perubahan ke Telegram. |
 
-Urutannya diatur `run_all.py`: harga, berita, analis, skor, notifikasi.
+Urutannya diatur `run_all.py`: harga, berita, analis, skor.
 
 ## Cara memasang
 
 1. Buat repo baru di GitHub dan unggah isi folder ini.
 2. Di **Settings > Secrets and variables > Actions**, tambahkan:
    - `ANTHROPIC_API_KEY` untuk agen analis (opsional, tanpa ini agen analis dilewati).
-   - `TELEGRAM_BOT_TOKEN` dan `TELEGRAM_CHAT_ID` untuk notifikasi (opsional).
 3. Di **Settings > Pages**, pilih sumber *Deploy from a branch*, cabang `main`, folder `/docs`.
 4. Buka tab **Actions**, pilih *Land Radar agents*, klik **Run workflow** untuk percobaan pertama. Setelah itu berjalan otomatis setiap hari pukul 05.00 WIB.
 
