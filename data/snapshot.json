@@ -1,0 +1,667 @@
+{
+ "ba1": {
+  "skor": 54,
+  "kategori": "Pantau",
+  "harga_tip": 5000000,
+  "potensi_dasar": 0.309,
+  "tahap": {
+   "Tol Gilimanuk–Mengwi (seksi Soka–Mengwi)": 3,
+   "Perluasan koridor Canggu–Pererenan ke barat": 5
+  }
+ },
+ "ba2": {
+  "skor": 59,
+  "kategori": "Hangat",
+  "harga_tip": 1700000,
+  "potensi_dasar": 0.416,
+  "tahap": {
+   "Tol Gilimanuk–Mengwi (seksi Gilimanuk–Pekutatan)": 3
+  }
+ },
+ "ba3": {
+  "skor": 47,
+  "kategori": "Pantau",
+  "harga_tip": 464758,
+  "potensi_dasar": 0.518,
+  "tahap": {
+   "Bandara Internasional Bali Utara": 2,
+   "Pemuteran dan Menjangan": 5
+  }
+ },
+ "ba4": {
+  "skor": 46,
+  "kategori": "Pantau",
+  "harga_tip": 812404,
+  "potensi_dasar": 0.289,
+  "tahap": {
+   "Wacana bandara Kubutambahan": 1,
+   "Shortcut Singaraja–Mengwi": 4
+  }
+ },
+ "ba5": {
+  "skor": 62,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.161,
+  "tahap": {
+   "KEK Kura Kura Bali": 4,
+   "KEK Sanur (kesehatan)": 5
+  }
+ },
+ "ba6": {
+  "skor": 58,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.372,
+  "tahap": {
+   "Ujung Tol Gilimanuk–Mengwi": 3,
+   "Kereta perkotaan Bali": 2
+  }
+ },
+ "ba7": {
+  "skor": 45,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.086,
+  "tahap": {
+   "Perpanjangan Bypass Ida Bagus Mantra ke Karangasem": 2,
+   "Amed dan Tulamben": 5
+  }
+ },
+ "nb1": {
+  "skor": 55,
+  "kategori": "Hangat",
+  "harga_tip": 3500000,
+  "potensi_dasar": 0.097,
+  "tahap": {
+   "KEK Mandalika dan Sirkuit Mandalika": 5,
+   "Bandara Lombok (BIL)": 5
+  }
+ },
+ "nb2": {
+  "skor": 44,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.134,
+  "tahap": {
+   "Limpahan wisata dari Mandalika": 2
+  }
+ },
+ "nb3": {
+  "skor": 49,
+  "kategori": "Pantau",
+  "harga_tip": 474342,
+  "potensi_dasar": 0.167,
+  "tahap": {
+   "Global Hub Bandar Kayangan": 2,
+   "Gili Trawangan, Meno, Air": 5
+  }
+ },
+ "nb4": {
+  "skor": 52,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.046,
+  "tahap": {
+   "Smelter tembaga Amman Mineral": 5
+  }
+ },
+ "nb5": {
+  "skor": 51,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.153,
+  "tahap": {
+   "Kawasan Samota": 2
+  }
+ },
+ "nt1": {
+  "skor": 41,
+  "kategori": "Pantau",
+  "harga_tip": 2000000,
+  "potensi_dasar": 0.066,
+  "tahap": {
+   "Destinasi Pariwisata Super Prioritas": 5,
+   "Bandara Komodo": 5
+  }
+ },
+ "nt2": {
+  "skor": 45,
+  "kategori": "Pantau",
+  "harga_tip": 979796,
+  "potensi_dasar": 0.04,
+  "tahap": {
+   "Kawasan Golo Mori": 5,
+   "Jalan Labuan Bajo–Golo Mori": 5
+  }
+ },
+ "nt3": {
+  "skor": 41,
+  "kategori": "Pantau",
+  "harga_tip": 350000,
+  "potensi_dasar": 0.065,
+  "tahap": {
+   "Resor premium Sumba": 5,
+   "Bandara Tambolaka": 5
+  }
+ },
+ "nt4": {
+  "skor": 68,
+  "kategori": "Hangat",
+  "harga_tip": 1000000,
+  "potensi_dasar": 0.097,
+  "tahap": {
+   "Bendungan Manikin": 4
+  }
+ },
+ "nt5": {
+  "skor": 53,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.02,
+  "tahap": {
+   "PLBN Motaain dan jalan perbatasan": 5
+  }
+ },
+ "nt6": {
+  "skor": 55,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.093,
+  "tahap": {
+   "Bendungan Mbay (Lambo)": 4
+  }
+ },
+ "nt7": {
+  "skor": 46,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.027,
+  "tahap": {
+   "Wisata bahari Flores timur": 5
+  }
+ },
+ "ac1": {
+  "skor": 44,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.067,
+  "tahap": {
+   "Tol Sigli–Banda Aceh": 5
+  }
+ },
+ "ac2": {
+  "skor": 41,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.054,
+  "tahap": {
+   "KEK Arun Lhokseumawe": 5
+  }
+ },
+ "su1": {
+  "skor": 55,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.273,
+  "tahap": {
+   "Destinasi Pariwisata Super Prioritas": 5,
+   "Tol Kuala Tanjung–Parapat": 4
+  }
+ },
+ "su2": {
+  "skor": 49,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.058,
+  "tahap": {
+   "KEK Sei Mangkei": 5
+  }
+ },
+ "sb1": {
+  "skor": 57,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.298,
+  "tahap": {
+   "Tol Padang–Pekanbaru seksi Padang–Sicincin": 4
+  }
+ },
+ "ri1": {
+  "skor": 41,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.062,
+  "tahap": {
+   "Tol Pekanbaru–Dumai dan Pekanbaru–Bangkinang": 5
+  }
+ },
+ "kr1": {
+  "skor": 33,
+  "kategori": "Dingin",
+  "harga_tip": null,
+  "potensi_dasar": 0.169,
+  "tahap": {
+   "KEK Nongsa (digital)": 5,
+   "Rempang Eco City": 2
+  }
+ },
+ "kr2": {
+  "skor": 41,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.06,
+  "tahap": {
+   "KEK Galang Batang": 5,
+   "Kawasan Lagoi": 5
+  }
+ },
+ "ja1": {
+  "skor": 48,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.223,
+  "tahap": {
+   "Tol Betung–Jambi": 4
+  }
+ },
+ "ss1": {
+  "skor": 44,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.191,
+  "tahap": {
+   "Tol Kayuagung–Palembang–Betung": 5,
+   "KEK Tanjung Api-Api": 2
+  }
+ },
+ "be1": {
+  "skor": 45,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.051,
+  "tahap": {
+   "Tol Bengkulu–Taba Penanjung": 5
+  }
+ },
+ "la1": {
+  "skor": 44,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.072,
+  "tahap": {
+   "Tol Bakauheni–Terbanggi Besar": 5,
+   "Pesisir Kalianda": 5
+  }
+ },
+ "bb1": {
+  "skor": 46,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.058,
+  "tahap": {
+   "KEK Tanjung Kelayang": 5
+  }
+ },
+ "jk1": {
+  "skor": 54,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.174,
+  "tahap": {
+   "MRT Fase 2A": 4,
+   "Tanggul laut raksasa Pantura": 2
+  }
+ },
+ "jb1": {
+  "skor": 55,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.314,
+  "tahap": {
+   "Bandara Kertajati": 5,
+   "Tol Cisumdawu": 5,
+   "Kawasan Metropolitan Rebana": 2
+  }
+ },
+ "jb2": {
+  "skor": 55,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.167,
+  "tahap": {
+   "Pelabuhan Patimban": 4
+  }
+ },
+ "jb3": {
+  "skor": 40,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.036,
+  "tahap": {
+   "Stasiun kereta cepat Whoosh Tegalluar": 5
+  }
+ },
+ "bt1": {
+  "skor": 45,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.155,
+  "tahap": {
+   "Kawasan PIK 2": 4
+  }
+ },
+ "bt2": {
+  "skor": 58,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.319,
+  "tahap": {
+   "Tol Serang–Panimbang": 4,
+   "KEK Tanjung Lesung": 5
+  }
+ },
+ "jt1": {
+  "skor": 62,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.222,
+  "tahap": {
+   "KIT Batang": 4
+  }
+ },
+ "jt2": {
+  "skor": 55,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.278,
+  "tahap": {
+   "Tol Yogya–Solo": 4
+  }
+ },
+ "jt3": {
+  "skor": 52,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.067,
+  "tahap": {
+   "KEK Kendal": 5
+  }
+ },
+ "yo1": {
+  "skor": 57,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.438,
+  "tahap": {
+   "Bandara YIA": 5,
+   "Tol Yogya–YIA": 3
+  }
+ },
+ "yo2": {
+  "skor": 54,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.231,
+  "tahap": {
+   "Tol Yogya–Solo": 4
+  }
+ },
+ "ji1": {
+  "skor": 52,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.067,
+  "tahap": {
+   "KEK Gresik (JIIPE)": 5
+  }
+ },
+ "ji2": {
+  "skor": 53,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.246,
+  "tahap": {
+   "Bandara Dhoho Kediri": 5,
+   "Tol Kediri–Tulungagung": 4
+  }
+ },
+ "ji3": {
+  "skor": 67,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.341,
+  "tahap": {
+   "Tol Probolinggo–Banyuwangi": 4,
+   "Banyuwangi (Ijen)": 5
+  }
+ },
+ "kb1": {
+  "skor": 41,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.04,
+  "tahap": {
+   "Terminal Kijing": 5
+  }
+ },
+ "kt1": {
+  "skor": 40,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.043,
+  "tahap": {
+   "Food estate Kalteng": 3
+  }
+ },
+ "ks1": {
+  "skor": 45,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.062,
+  "tahap": {
+   "Pusat pemerintahan provinsi": 5
+  }
+ },
+ "ki1": {
+  "skor": 41,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.262,
+  "tahap": {
+   "Ibu Kota Nusantara": 4
+  }
+ },
+ "ki2": {
+  "skor": 50,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.255,
+  "tahap": {
+   "Tol Balikpapan–IKN": 4
+  }
+ },
+ "ku1": {
+  "skor": 61,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.272,
+  "tahap": {
+   "Kawasan Industri Hijau Kaltara": 4
+  }
+ },
+ "sa1": {
+  "skor": 58,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.195,
+  "tahap": {
+   "KEK Likupang": 4,
+   "Destinasi Pariwisata Super Prioritas": 5
+  }
+ },
+ "sa2": {
+  "skor": 56,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.096,
+  "tahap": {
+   "Tol Manado–Bitung": 5,
+   "KEK Bitung": 5
+  }
+ },
+ "go1": {
+  "skor": 53,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.022,
+  "tahap": {
+   "Gorontalo Outer Ring Road": 5
+  }
+ },
+ "st1": {
+  "skor": 44,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.046,
+  "tahap": {
+   "Kawasan nikel IMIP": 5
+  }
+ },
+ "st2": {
+  "skor": 37,
+  "kategori": "Dingin",
+  "harga_tip": null,
+  "potensi_dasar": 0.016,
+  "tahap": {
+   "Rekonstruksi pascabencana": 5
+  }
+ },
+ "sr1": {
+  "skor": 48,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.051,
+  "tahap": {
+   "Ibu kota provinsi": 5
+  }
+ },
+ "sn1": {
+  "skor": 52,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.051,
+  "tahap": {
+   "Kereta Makassar–Parepare": 5
+  }
+ },
+ "sn2": {
+  "skor": 63,
+  "kategori": "Hangat",
+  "harga_tip": null,
+  "potensi_dasar": 0.194,
+  "tahap": {
+   "Makassar New Port": 4,
+   "Center Point of Indonesia": 4
+  }
+ },
+ "sg1": {
+  "skor": 44,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.04,
+  "tahap": {
+   "Smelter nikel Morosi": 5
+  }
+ },
+ "mu1": {
+  "skor": 51,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.054,
+  "tahap": {
+   "Kawasan nikel IWIP": 5
+  }
+ },
+ "mu2": {
+  "skor": 45,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.041,
+  "tahap": {
+   "KEK Morotai": 5
+  }
+ },
+ "ma1": {
+  "skor": 34,
+  "kategori": "Dingin",
+  "harga_tip": null,
+  "potensi_dasar": 0.073,
+  "tahap": {
+   "Ambon New Port / Lumbung Ikan Nasional": 1
+  }
+ },
+ "pa1": {
+  "skor": 37,
+  "kategori": "Dingin",
+  "harga_tip": null,
+  "potensi_dasar": 0.046,
+  "tahap": {
+   "Trans Papua": 4
+  }
+ },
+ "ps1": {
+  "skor": 47,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.042,
+  "tahap": {
+   "Food estate dan perkebunan tebu Merauke": 4
+  }
+ },
+ "pt1": {
+  "skor": 44,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.285,
+  "tahap": {
+   "Pusat pemerintahan provinsi baru": 3
+  }
+ },
+ "pp1": {
+  "skor": 33,
+  "kategori": "Dingin",
+  "harga_tip": null,
+  "potensi_dasar": 0.171,
+  "tahap": {
+   "Pusat pemerintahan provinsi baru": 3
+  }
+ },
+ "pb1": {
+  "skor": 50,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.139,
+  "tahap": {
+   "LNG Tangguh dan rencana industri pupuk": 4
+  }
+ },
+ "pd1": {
+  "skor": 47,
+  "kategori": "Pantau",
+  "harga_tip": null,
+  "potensi_dasar": 0.054,
+  "tahap": {
+   "KEK Sorong": 5
+  }
+ },
+ "pd2": {
+  "skor": 31,
+  "kategori": "Dingin",
+  "harga_tip": null,
+  "potensi_dasar": 0.031,
+  "tahap": {
+   "Wisata bahari Raja Ampat": 5
+  }
+ }
+}

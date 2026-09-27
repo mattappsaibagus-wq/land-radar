@@ -1,0 +1,22 @@
+{
+  "claude_model": "claude-sonnet-5",
+  "auto_apply_stage_changes": false,
+  "news_max_items_per_hotspot": 8,
+  "news_lookback_days": 14,
+  "price_min_samples": 5,
+  "price_change_alert_pct": 10,
+  "score_change_alert_points": 5,
+  "request_delay_seconds": 4,
+  "price_sources": {
+    "_catatan": "URL halaman pencarian iklan per titik. Tambah atau ganti sesuai kebutuhan. Periksa syarat penggunaan tiap portal.",
+    "ba1": ["https://www.99.co/id/jual/tanah/area-tabanan/kedungu", "https://www.99.co/id/jual/tanah/tabanan"],
+    "ba2": ["https://www.99.co/id/jual/tanah/jembrana/pekutatan", "https://www.99.co/id/jual/tanah/jembrana"],
+    "ba3": ["https://www.99.co/id/jual/tanah/buleleng/gerokgak"],
+    "ba4": ["https://www.99.co/id/jual/tanah/buleleng/kubutambahan"],
+    "nb1": ["https://www.99.co/id/jual/tanah/lombok-tengah", "https://www.rumah123.com/jual/lombok-tengah/tanah/"],
+    "nb3": ["https://www.99.co/id/jual/tanah/lombok-utara"],
+    "nt1": ["https://www.99.co/id/jual/tanah/area-manggarai-barat/labuan-bajo", "https://www.rumah123.com/jual/manggarai-barat/labuan-bajo/tanah/"],
+    "nt3": ["https://www.99.co/id/jual/tanah/sumba-barat-daya"],
+    "nt4": ["https://www.99.co/id/jual/tanah/kupang"]
+  }
+}
