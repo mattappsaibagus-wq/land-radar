@@ -1,0 +1,30 @@
+name: Bootstrap
+on:
+  push:
+    paths: ["repo.b64"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ekstrak isi repo
+        run: |
+          if [ ! -f repo.b64 ]; then echo "Tidak ada paket bootstrap"; exit 0; fi
+          base64 -d repo.b64 | tar xJf -
+          git rm -q repo.b64
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Hitung skor awal dan buat dashboard
+        run: |
+          pip install -r requirements.txt
+          python run_all.py skor
+      - name: Commit
+        run: |
+          git config user.name "land-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Bootstrap: pasang Land Radar"
+          git push
