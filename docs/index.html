@@ -11,7 +11,7 @@
 :root{
   --paper:#F4F6F3; --panel:#FFFFFF; --ink:#0F2629; --muted:#5E7270; --line:#DCE4E0; --line2:#EBF0ED;
   --sea:#0B2E33; --sea2:#123F45; --landbase:#3C6461;
-  --cold:#8FB3AA; --watch:#D6BB4E; --warm:#E3862A; --hot:#C23A2B;
+  --cold:#6F8F87; --watch:#B9B08A; --warm:#D99A4E; --hot:#C8553D;
   --gold:#B8892E; --goldSoft:#F5EDDC; --tenun:#3D3A86; --tenunSoft:#E7E6F4; --focus:#3D3A86;
   --shadow:0 1px 2px rgba(15,38,41,.05),0 10px 28px -14px rgba(15,38,41,.22);
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
@@ -211,16 +211,54 @@ footer{color:var(--muted);font-size:.8rem;padding:0 0 32px;max-width:80ch}
   .price{grid-template-columns:1fr 1fr}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* === premium polish === */
+.topnav{display:flex;gap:4px;margin-left:28px}
+.topnav a{color:var(--muted);text-decoration:none;font-size:.88rem;font-weight:500;padding:6px 12px;border-radius:999px}
+.topnav a:hover{color:var(--ink);background:var(--line2)}
+.mapbox{margin-top:18px;padding:34px 28px 14px;border-radius:26px;
+  background:
+    repeating-radial-gradient(circle at 92% 108%,transparent 0 38px,rgba(233,200,119,.075) 38px 39px),
+    radial-gradient(120% 140% at 70% 0%,var(--sea2) 0%,var(--sea) 62%)}
+.mapbox header.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:end;padding:0 4px 22px;margin-bottom:6px;border-bottom:1px solid rgba(233,200,119,.18)}
+.mapbox h1{color:#F3EFE4;font-size:clamp(2.1rem,4.6vw,3.9rem);max-width:13ch}
+.mapbox .lede{color:rgba(226,238,234,.74);margin:0 0 6px;font-size:1rem;max-width:46ch}
+.mapbox svg#map{margin-top:10px}
+.prov{stroke:rgba(6,19,20,.9);stroke-width:.45}
+.prov.dim{opacity:.22}
+.dot{stroke:rgba(6,19,20,.85)}
+.legend{border-top:1px solid rgba(233,200,119,.12);margin-top:6px;padding-top:12px;color:#C9D8D3}
+.frontier{margin:44px 0 12px}
+.shead h2{font-size:1.75rem}
+.fcard{border-radius:20px;padding:18px}
+.controls{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:12px 14px;box-shadow:var(--shadow);margin:30px 0 18px}
+.controls input[type=search],.controls select{background:var(--paper);border-color:var(--line2)}
+.guidehead{margin-top:44px}
+.info{display:block;column-count:3;column-gap:20px}
+.info .pane{break-inside:avoid;display:inline-block;width:100%;margin:0 0 20px}
+@media (max-width:1100px){.info{column-count:2}}
+@media (min-width:861px){
+  #listPane{position:sticky;top:72px}
+  .list{max-height:calc(100vh - 150px)}
+  .detail{position:sticky;top:72px;max-height:calc(100vh - 88px);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin}
+}
+@media (max-width:860px){
+  .topnav{display:none}
+  .mapbox{padding:22px 12px 8px;border-radius:20px}
+  .mapbox header.hero{grid-template-columns:1fr;gap:10px;padding:0 6px 16px}
+  .info{column-count:1}
+  .controls{padding:10px}
+}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span class="mark" aria-hidden="true"></span><span class="brand">Land Radar</span><span class="stamp">Data per <b>September 2026</b><br><span id="count"></span></span></div></div>
+<div class="topbar"><div class="wrap"><span class="mark" aria-hidden="true"></span><span class="brand">Land Radar</span><nav class="topnav" aria-label="Bagian"><a href="#peta">Peta</a><a href="#frontier">Frontier</a><a href="#listPane">Peringkat</a><a href="#infoSec">Panduan</a></nav><span class="stamp">Data per <b>September 2026</b><br><span id="count"></span></span></div></div>
 <div class="wrap">
-<header class="hero">
-  <h1>Temukan lahan sebelum pasar menyadarinya.</h1>
-  <p class="lede">Radar prospek tanah di 38 provinsi, dengan fokus Bali, NTB, dan NTT. Setiap titik dinilai dari tahap proyek, zonasi, aktivitas lapangan, harga pasar, dan prediksi harga hingga 2032.</p>
-</header>
 <section class="mapbox" id="peta" aria-label="Peta skor per provinsi">
+  <header class="hero">
+    <h1>Temukan lahan sebelum pasar menyadarinya.</h1>
+    <p class="lede">Radar prospek tanah di 38 provinsi, dengan fokus Bali, NTB, dan NTT. Setiap titik dinilai dari tahap proyek, zonasi, aktivitas lapangan, harga pasar, dan prediksi harga hingga 2032.</p>
+  </header>
   <div class="mapscroll"><svg id="map" viewBox="0 0 658 252" role="img" aria-label="Peta Indonesia berwarna sesuai skor titik tertinggi di tiap provinsi"></svg></div>
   <div class="legend" id="legend"></div>
   <div class="tip" id="tip"></div>
@@ -266,6 +304,7 @@ footer{color:var(--muted);font-size:.8rem;padding:0 0 32px;max-width:80ch}
   <div class="scrim" id="scrim"></div>
 </div>
 
+<div class="shead guidehead"><h2>Panduan</h2><p>Atur bobot sesuai strategi Anda, pahami cara skor dihitung, dan periksa legalitas sebelum membeli.</p></div>
 <div class="info" id="infoSec">
   <div class="pane">
     <h2>Atur bobot skor</h2>
@@ -324,7 +363,7 @@ const DEFW={katalis:35,celah:35,aktivitas:15,zonasi:15,risiko:35};
 const WL={katalis:"Katalis",celah:"Celah harga",aktivitas:"Aktivitas lapangan",zonasi:"Zonasi",risiko:"Penalti risiko (%)"};
 const STAGEW=[0,.2,.45,.85,1,.6];
 const CATS=[{k:"Panas",min:70,c:"var(--hot)"},{k:"Hangat",min:55,c:"var(--warm)"},{k:"Pantau",min:40,c:"var(--watch)"},{k:"Dingin",min:0,c:"var(--cold)"}];
-const CATHEX={Panas:"#C23A2B",Hangat:"#E4892B",Pantau:"#D8BF55",Dingin:"#8FB3AA"};
+const CATHEX={Panas:"#C8553D",Hangat:"#D99A4E",Pantau:"#B9B08A",Dingin:"#6F8F87"};
 const S={tab:"h",sel:null,selProv:null,cats:new Set(),q:"",pulau:"",jenis:"",star:false,prio:true,remote:false};
 let U={w:{...DEFW},o:{},star:[]};
 function load(){try{const r=localStorage.getItem("landradar.v1");if(r){const p=JSON.parse(r);U={w:{...DEFW,...(p.w||{})},o:p.o||{},star:p.star||[]};}}catch(e){}}
@@ -425,20 +464,20 @@ function series(h,U){const T=Math.max(2027,targetYear(h));return YRS.map(y=>{con
 function predAt(h,y,key){const pr=projeksi(h);return series(h,pr[key])[YRS.indexOf(y)];}
 function predBlock(h){const pr=projeksi(h),t=hargaTip(h),T=targetYear(h);
  const S3={kons:series(h,pr.kons),dasar:series(h,pr.dasar),opt:series(h,pr.opt)};
- const W=320,Hh=132,l=50,r=10,tp=10,b=22;const base=t||100;
+ const W=Math.round(Math.max(300,Math.min(620,(det.clientWidth||380)-80))),Hh=Math.round(W*.26)+56,l=58,r=12,tp=14,b=24;const base=t||100;
  const vals=[].concat(S3.kons,S3.dasar,S3.opt).map(v=>v*base);const mx=Math.max(...vals)*1.04,mn=base*.96;
  const X=i=>l+(W-l-r)*i/(YRS.length-1),Y=v=>tp+(Hh-tp-b)*(1-(v*base-mn)/(mx-mn));
  const path=s=>s.map((v,i)=>(i?"L":"M")+X(i).toFixed(1)+","+Y(v).toFixed(1)).join("");
  const ti=YRS.indexOf(Math.min(2032,T));
  const svg=`<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Prediksi harga 2026 sampai 2032">
   <line x1="${l}" x2="${W-r}" y1="${Y(1)}" y2="${Y(1)}" stroke="var(--line)" stroke-dasharray="2 3"/>
-  ${ti>=0?`<line x1="${X(ti)}" x2="${X(ti)}" y1="${tp}" y2="${Hh-b}" stroke="var(--gold)" stroke-dasharray="3 3" opacity=".7"/><text x="${X(ti)-4}" y="${tp+8}" text-anchor="end" font-size="8.5" fill="var(--gold)">target katalis ${T}</text>`:""}
+  ${ti>=0?`<line x1="${X(ti)}" x2="${X(ti)}" y1="${tp}" y2="${Hh-b}" stroke="var(--gold)" stroke-dasharray="3 3" opacity=".7"/><text x="${ti<3?X(ti)+6:X(ti)-6}" y="${tp+8}" text-anchor="${ti<3?"start":"end"}" font-size="11" fill="var(--gold)">target katalis ${T}</text>`:""}
   <path d="${path(S3.opt)}" fill="none" stroke="var(--gold)" stroke-width="2"/>
   <path d="${path(S3.dasar)}" fill="none" stroke="var(--ink)" stroke-width="2"/>
   <path d="${path(S3.kons)}" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 3"/>
-  ${[0,2,4,6].map(i=>`<text x="${X(i)}" y="${Hh-6}" text-anchor="${i===6?"end":i===0?"start":"middle"}" font-size="9" fill="var(--muted)">${YRS[i]}</text>`).join("")}
-  <text x="${l-6}" y="${Y(mx/base)+9}" text-anchor="end" font-size="8.5" fill="var(--muted)">${t?rp(mx):Math.round(mx)}</text>
-  <text x="${l-6}" y="${Y(1)+3}" text-anchor="end" font-size="8.5" fill="var(--muted)">${t?rp(base):"100"}</text></svg>`;
+  ${[0,2,4,6].map(i=>`<text x="${X(i)}" y="${Hh-6}" text-anchor="${i===6?"end":i===0?"start":"middle"}" font-size="11" fill="var(--muted)">${YRS[i]}</text>`).join("")}
+  <text x="${l-6}" y="${Y(mx/base)+9}" text-anchor="end" font-size="11" fill="var(--muted)">${t?rp(mx):Math.round(mx)}</text>
+  <text x="${l-6}" y="${Y(1)+3}" text-anchor="end" font-size="11" fill="var(--muted)">${t?rp(base):"100"}</text></svg>`;
  const at=(y,k)=>S3[k][YRS.indexOf(y)];
  const val=(y,k)=>t?`${rp(base*at(y,k))}/m²`:`indeks ${Math.round(100*at(y,k))}`;
  return `<div class="pred"><h4>Prediksi harga ${t?"per m²":"(indeks, 2026 = 100)"}</h4>${svg}
@@ -548,6 +587,7 @@ if(typeof ALERTS!=="undefined"&&ALERTS.length){const ap=document.getElementById(
 {const na=document.getElementById("navAgent");setTimeout(()=>{if(!window.__agentOK){na.href="#infoSec";na.lastChild.textContent="Panduan";}},11000);}
 if(typeof UPDATED!=="undefined")document.querySelector(".stamp b").textContent=UPDATED;
 drawW();refresh();drawFrontier();
+{const ms=document.querySelector(".mapscroll");requestAnimationFrame(()=>{if(ms.scrollWidth>ms.clientWidth)ms.scrollLeft=(ms.scrollWidth-ms.clientWidth)*.62;});}
 </script>
 </body>
 </html>
