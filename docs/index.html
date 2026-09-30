@@ -308,14 +308,6 @@ footer{color:var(--muted);font-size:.8rem;padding:0 0 32px;max-width:80ch}
   </div>
 </div>
 
-<div class="actions" style="margin-bottom:16px">
-  <button class="btn" id="exp">Ekspor penilaian saya (JSON)</button>
-  <label class="btn" for="imp">Impor penilaian</label><input type="file" id="imp" accept="application/json" class="visually-hidden">
-  <button class="btn" id="resetAll">Hapus semua ubahan saya</button>
-</div>
-<footer>
-  Skor awal adalah estimasi indikatif yang disusun dari berita dan dokumen publik hingga September 2026, bukan data transaksi. Status proyek bisa berubah; cek ulang di sumber resmi. Ubahan penilaian dan catatan tersimpan hanya di peramban Anda. Ini bukan nasihat investasi.
-</footer>
 </div>
 <nav class="bnav" aria-label="Navigasi">
   <a href="#peta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Peta</a>
@@ -511,9 +503,6 @@ const wEl=document.getElementById("weights");
 function drawW(){wEl.innerHTML=Object.keys(DEFW).map(k=>`<label class="sl"><span>${WL[k]}</span><input type="range" min="0" max="${k==="risiko"?60:50}" value="${U.w[k]}" data-w="${k}"><output>${U.w[k]}</output></label>`).join("");}
 wEl.addEventListener("input",e=>{const k=e.target.dataset.w;if(!k)return;U.w[k]=+e.target.value;e.target.nextElementSibling.value=e.target.value;save();refresh();});
 document.getElementById("resetW").onclick=()=>{U.w={...DEFW};save();drawW();refresh();};
-document.getElementById("resetAll").onclick=()=>{if(confirm("Hapus semua penilaian, catatan, dan daftar pantauan Anda?")){U={w:{...DEFW},o:{},star:[]};save();drawW();refresh();}};
-document.getElementById("exp").onclick=()=>{const t=JSON.stringify(U,null,2);navigator.clipboard?.writeText(t).then(()=>alert("Penilaian disalin ke clipboard sebagai JSON. Simpan di catatan Anda."),()=>prompt("Salin JSON ini:",t));};
-document.getElementById("imp").addEventListener("change",async e=>{const f=e.target.files[0];if(!f)return;try{const p=JSON.parse(await f.text());U={w:{...DEFW,...(p.w||{})},o:p.o||{},star:p.star||[]};save();drawW();refresh();}catch(err){alert("File tidak bisa dibaca. Pastikan ini JSON hasil ekspor Land Radar.");}});
 
 // ===== Agen (capability: sample) =====
 let SAMPLE=null,agentCtl=null;
