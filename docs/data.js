@@ -8,4 +8,4 @@ const SISA=[0, 0.3, 0.5, 0.7, 0.5, 0.15];
 const REMOTE=["nb2", "nb5", "nb6", "nb7", "nb8", "nt3", "nt5", "nt6", "nt8", "nt9", "nt10", "ba3"];
 const INFLASI=0.05;
 const ALERTS=[];
-const UPDATED="01 Oct 2026 01:05 UTC";
+const UPDATED="02 Oct 2026 01:19 UTC";
